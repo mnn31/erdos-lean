@@ -42,13 +42,13 @@ elementary formal proof.
 (`erdos_1054_parts_ii_false`, `erdos_1054_parts_ii_solution`). It follows Tao's argument from the
 discussion of problem 468 on erdosproblems.com. The Selberg sieve material is vendored, with
 only small changes, from Apache-2.0 sources: Arend Mellendijk's Selberg sieve as included in
-PrimeNumberTheoremAnd, and the two-dimensional sieve and Brun–Titchmarsh modules of
+PrimeNumberTheoremAnd, and the two-dimensional sieve and Brun-Titchmarsh modules of
 [antoshashakov/Principia-Math-Solutions](https://github.com/antoshashakov/Principia-Math-Solutions).
 Their copyright headers are kept in the file.
 
 **`ErdosLean/Erdos1167.lean`** proves `Erdos1167.erdos_1167.variants.finite_targets`
 (`erdos_1167_finite_targets`). The result is due to Erdős, Hajnal, Máté and Rado (1984). The
-proof uses the Erdős–Rado tree argument and the stepping-up construction.
+proof uses the Erdős-Rado tree argument and the stepping-up construction.
 
 **`ErdosLean/Erdos36.lean`** proves `Erdos36.erdos_36.variants.upper` with the answer
 `0.380924` filled in (`erdos_36_variants_upper`). It also proves
