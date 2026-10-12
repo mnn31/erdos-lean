@@ -1,0 +1,16 @@
+name = "erdos_lean"
+version = "0.1.0"
+defaultTargets = ["ErdosLean"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+relaxedAutoImplicit = false
+
+[[require]]
+name = "formal_conjectures"
+git = "https://github.com/google-deepmind/formal-conjectures"
+rev = "bdda9748e16d1df263db93d5241011fb399abfae"
+
+[[lean_lib]]
+name = "ErdosLean"
