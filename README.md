@@ -3,7 +3,7 @@
 This repository holds Lean 4 proofs of statements from
 [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures),
 so that problem files there can point to them with the `formal_proof` attribute. Every file
-imports the problem file from formal-conjectures at a pinned commit. Where a proof settles a
+imports the problem file from formal-conjectures at a pinned commit, except where noted below. Where a proof settles a
 statement from that repository, the theorem's type is written as `type_of% <statement>`, its
 negation, or the same statement with the `answer(...)` filled in. That way the proved type is
 exactly the repository's type, not a restatement of it.
@@ -61,6 +61,19 @@ inequalities with `decide +kernel`.
 (`erdos_872_variants_prime_question`): every maximal primitive subset of `{2, ..., n}` has at
 least `π(n)` elements. The argument is old-bielefelder's, from post #6532 of the erdosproblems.com
 forum thread (May 2026).
+
+**`ErdosLean/Erdos919.lean`** proves the four solved statements of a proposed formal-conjectures
+file for Problem 919, which asks for a graph on `ω₂²` with chromatic number `ℵ₂` (or `ℵ₁`) whose
+subgraphs on vertex sets of smaller order type are countably chromatic. That file is not in
+formal-conjectures at the pinned commit, so the four types are copied from it verbatim.
+`erdos_919.variants.iff_erdos_918_i` shows that the `ℵ₂` question is equivalent to
+`Erdos918.erdos_918.parts.i`, and an `example` checks by `rfl` that its right-hand side is that
+statement. `erdos_919.variants.aleph_1_iff` shows that the `ℵ₁` question is equivalent to the
+existence of a graph on `ℵ₂` vertices that is not countably chromatic although all of its
+subgraphs on `ℵ₁` vertices are. `erdos_919.variants.aleph_2_imp_aleph_1` and
+`erdos_919.variants.aleph_1_of_CH` give a positive answer to the `ℵ₁` question when the `ℵ₂`
+question has one, and under CH. The proof blows a graph on `ω₂` up to `ω₂ ×ₗ ω₂`, and the CH case
+uses the Erdős-Hajnal shift graph.
 
 ## Building
 
