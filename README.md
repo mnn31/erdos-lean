@@ -104,3 +104,5 @@ import ErdosLean
 
 Apache-2.0, see `LICENSE`. The vendored sieve code in `Erdos1054.lean` and the Glibichuk
 formalisation in `Erdos1180.lean` come from Apache-2.0 projects, as noted above.
+
+**`ErdosLean/Erdos675Twelve.lean`** proves `Erdos675.erdos_675.variants.sumsOfTwoSquares_infinite_twelve_shifts`: infinitely many t are 12-shifts of the sums of two squares (u^2 = 2W^2 + 1, x = 16u^2W^2 - 1, t = x^2 - 1), hence infinitely many n-shifts for every n <= 12.
