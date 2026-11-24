@@ -57,6 +57,14 @@ comes from AlphaEvolve's published 95-step function. The proof turns that functi
 residue-class construction on `{1, ..., 2n}`, and the kernel checks the needed integer
 inequalities with `decide +kernel`.
 
+**`ErdosLean/Erdos479.lean`** proves `erdos_479.variants.neg_two_pow`: for every `i ≥ 1` there
+are infinitely many `n` with `n ∣ 2^n + 2^i`, that is, `2^n ≡ -2^i (mod n)`. This settles the cases
+`k = -2^i` of Graham's question in problem 479. Starting from `n = 2^i`, each step multiplies `n` by
+a prime `p` with `2` of order `2(n - i)` modulo `p`. The file proves the needed case of Bang's
+theorem (base `2`) from cyclotomic polynomials, since Mathlib does not have it. Problem 479 has no
+variants in formal-conjectures at the pinned commit, so the statement is copied verbatim from the
+proposed addition to `479.lean`.
+
 **`ErdosLean/Erdos872.lean`** proves `Erdos872.erdos_872.variants.prime_question`
 (`erdos_872_variants_prime_question`): every maximal primitive subset of `{2, ..., n}` has at
 least `π(n)` elements. The argument is old-bielefelder's, from post #6532 of the erdosproblems.com

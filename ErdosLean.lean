@@ -1,5 +1,6 @@
 import ErdosLean.Erdos36
 import ErdosLean.Erdos269
+import ErdosLean.Erdos479
 import ErdosLean.Erdos872
 import ErdosLean.Erdos887
 import ErdosLean.Erdos919
