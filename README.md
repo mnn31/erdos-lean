@@ -104,3 +104,5 @@ import ErdosLean
 
 Apache-2.0, see `LICENSE`. The vendored sieve code in `Erdos1054.lean` and the Glibichuk
 formalisation in `Erdos1180.lean` come from Apache-2.0 projects, as noted above.
+
+**`ErdosLean/Erdos169.lean`** proves `Erdos169.erdos_169.variants.two_thirds` and `const_gt_half`: for every k ≥ 3, f(k) > (2/3) log W(k), where f(k) is the largest reciprocal sum of a set with no k-term progression and W(k) the van der Waerden number.
