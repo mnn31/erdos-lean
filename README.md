@@ -75,6 +75,13 @@ subgraphs on `ℵ₁` vertices are. `erdos_919.variants.aleph_2_imp_aleph_1` and
 question has one, and under CH. The proof blows a graph on `ω₂` up to `ω₂ ×ₗ ω₂`, and the CH case
 uses the Erdős-Hajnal shift graph.
 
+**`ErdosLean/Erdos382Width17.lean`** proves `erdos_382.variants.width_17`: the interval
+`[12339873448110272, 12339873448110289]`, with `v - u = 17`, satisfies
+`Erdos382.LargestPrimeRepeated`. Its right endpoint is `111084983 ^ 2`, and every integer in it
+has all prime factors at most `111084983`. The proof checks a prime factorization of each of the
+18 integers with `norm_num`. The statement is from a proposed formal-conjectures change and is not
+in formal-conjectures at the pinned commit, so its type is written out.
+
 ## Building
 
 Install [elan](https://github.com/leanprover/elan), then run
