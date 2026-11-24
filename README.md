@@ -104,3 +104,5 @@ import ErdosLean
 
 Apache-2.0, see `LICENSE`. The vendored sieve code in `Erdos1054.lean` and the Glibichuk
 formalisation in `Erdos1180.lean` come from Apache-2.0 projects, as noted above.
+
+**`ErdosLean/Erdos675.lean`** proves `Erdos675.erdos_675.variants.sumsOfTwoSquares_infinite_eight_shifts`: infinitely many t are 8-shifts of the sums of two squares (Pell device of Choudhry and Maji).
