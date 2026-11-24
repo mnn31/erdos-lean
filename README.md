@@ -104,3 +104,5 @@ import ErdosLean
 
 Apache-2.0, see `LICENSE`. The vendored sieve code in `Erdos1054.lean` and the Glibichuk
 formalisation in `Erdos1180.lean` come from Apache-2.0 projects, as noted above.
+
+**`ErdosLean/Erdos169Er80.lean`** proves `Erdos3.erdos_3.variants.uniform_tail_iff` (for each k ≥ 3, Erdős 3 at k is equivalent to the uniform tail property asked in [Er80]) and its consequences at k = 3 (from Kelley–Meka) and for all k (from erdos_3).
