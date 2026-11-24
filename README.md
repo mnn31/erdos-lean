@@ -104,3 +104,5 @@ import ErdosLean
 
 Apache-2.0, see `LICENSE`. The vendored sieve code in `Erdos1054.lean` and the Glibichuk
 formalisation in `Erdos1180.lean` come from Apache-2.0 projects, as noted above.
+
+**`ErdosLean/Erdos394Limsup.lean`** proves `Erdos394.erdos_394.variants.factorial_sub_three_limsup`: limsup t_{n-3}(n!)/n = 2 (Erdős and Hall's question on t_{n-3}(n!)), via Kummer's theorem and a sieve, with the lower bound along n = 3^y.
