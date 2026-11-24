@@ -75,6 +75,14 @@ subgraphs on `ℵ₁` vertices are. `erdos_919.variants.aleph_2_imp_aleph_1` and
 question has one, and under CH. The proof blows a graph on `ω₂` up to `ω₂ ×ₗ ω₂`, and the CH case
 uses the Erdős-Hajnal shift graph.
 
+**`ErdosLean/Erdos383K13.lean`** proves the finite instance `k = 13` of Problem 383
+(`erdos_383.variants.k_eq_13`): there is a prime `p` such that the largest prime divisor of
+`∏_{i = 0}^{13} (p ^ 2 + i)` is `p`. The witness is `p = 169638367`, and the proof checks an
+explicit factorization of each `p ^ 2 + i` into integers at most `p` with `norm_num`. The
+statement is from a proposed formal-conjectures variant and is not in formal-conjectures at the
+pinned commit, so it is copied verbatim. It imports only
+`FormalConjecturesForMathlib.Data.Nat.MaxPrimeFac` and Mathlib.
+
 ## Building
 
 Install [elan](https://github.com/leanprover/elan), then run
