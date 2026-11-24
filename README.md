@@ -75,6 +75,14 @@ subgraphs on `ℵ₁` vertices are. `erdos_919.variants.aleph_2_imp_aleph_1` and
 question has one, and under CH. The proof blows a graph on `ω₂` up to `ω₂ ×ₗ ω₂`, and the CH case
 uses the Erdős-Hajnal shift graph.
 
+**`ErdosLean/AcRiQuestion169.lean`** answers Question 16.9 of Ackelsberg-Richter,
+arXiv:2604.12864, in the negative (`isDEssentialComponent_of_upperDensity_eq_one`). The question
+asks whether every `B ⊆ ℕ` with upper density `1` is a d-essential component, that is,
+whether the lower density of `A + B` exceeds `d(A)` whenever `d(A) ∈ (0, 1)`. The file gives a `B`
+of upper density `1` and an `A` of density `1/2` with lower density of `A + B` at most `1/2`. The
+statement is from a proposed formal-conjectures file and is not in formal-conjectures at the pinned
+commit, so it is copied verbatim. It imports only `FormalConjecturesForMathlib.Data.Set.Density`.
+
 ## Building
 
 Install [elan](https://github.com/leanprover/elan), then run
