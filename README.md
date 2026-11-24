@@ -104,3 +104,5 @@ import ErdosLean
 
 Apache-2.0, see `LICENSE`. The vendored sieve code in `Erdos1054.lean` and the Glibichuk
 formalisation in `Erdos1180.lean` come from Apache-2.0 projects, as noted above.
+
+**`ErdosLean/Erdos836.lean`** proves `Erdos836.erdos_836.variants.r_le_two_mul_of_inter_le`: for t ≥ 2, a finite r-uniform intersecting hypergraph that is not 2-colourable, with any two edges sharing at most t vertices, has r ≤ 2t (sharpening Price's r ≤ 2t + 1). It also checks that the Fano plane shows t ≥ 2 is needed.
