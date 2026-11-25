@@ -6,6 +6,7 @@ import ErdosLean.Erdos919
 import ErdosLean.Erdos1054
 import ErdosLean.Erdos1167
 import ErdosLean.Erdos1180
+import ErdosLean.Erdos124ThmAB
 
 /-!
 # ErdosLean

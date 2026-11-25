@@ -104,3 +104,5 @@ import ErdosLean
 
 Apache-2.0, see `LICENSE`. The vendored sieve code in `Erdos1054.lean` and the Glibichuk
 formalisation in `Erdos1180.lean` come from Apache-2.0 projects, as noted above.
+
+**`ErdosLean/Erdos124ThmAB.lean`** proves `Erdos124.erdos124.variants.ne_zero_of_power_block` and `ne_zero_of_three_mem`: for every k, all large n are sums of distinct powers d^j (d in D, j >= k) when D splits as a block of powers of one integer plus a part with sum 1/(d-1) > 1; in particular whenever 3 is in D, gcd D = 1 and sum 1/(d-1) > 3/2.
